@@ -5,15 +5,15 @@ Pod::Spec.new do |spec|
   spec.description  = <<-DESC
             HyperBid SDK for developer
                    DESC
-  spec.homepage     = "https://github.com/hyperbidteam/sdk_ios_cocoapod"
+  spec.homepage     = "https://github.com/hyperbid/hyperbid-ios-sdk"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author             = { "HyperBid" => "developer@hyperbid.com" }
-  spec.source       = { :git => "https://github.com/hyperbidteam/sdk_ios_cocoapod.git", :tag => spec.version }
+  spec.source       = { :git => "https://github.com/hyperbid/hyperbid-ios-sdk.git", :tag => spec.version }
   spec.platform     = :ios, '8.0'
   spec.ios.deployment_target = '8.0'
   spec.requires_arc = true
   spec.frameworks = 'SystemConfiguration', 'CoreGraphics','Foundation','UIKit'
-  
+
   spec.user_target_xcconfig =   {'OTHER_LDFLAGS' => ['-lObjC']}
   spec.libraries = 'c++', 'z', 'sqlite3', 'xml2', 'resolv'
   spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 armv7s arm64' }
@@ -30,25 +30,25 @@ Pod::Spec.new do |spec|
      ss.ios.deployment_target = '8.0'
      ss.vendored_frameworks = 'HyperBidiOS/HyperBidPangle*.framework'
   end
-  
+
   spec.subspec 'HyperBidFacebookAdapter' do |ss|
      ss.dependency 'HyperBidiOS/HyperBidSDK'
      ss.ios.deployment_target = '8.0'
      ss.vendored_frameworks = 'HyperBidiOS/HyperBidFacebook*.framework'
   end
-  
+
   spec.subspec 'HyperBidAdmobAdapter' do |ss|
      ss.dependency 'HyperBidiOS/HyperBidSDK'
      ss.ios.deployment_target = '8.0'
      ss.vendored_frameworks = 'HyperBidiOS/HyperBidAdmob*.framework'
   end
-   
+
   spec.subspec 'HyperBidInmobiAdapter' do |ss|
      ss.dependency 'HyperBidiOS/HyperBidSDK'
      ss.ios.deployment_target = '8.0'
      ss.vendored_frameworks = 'HyperBidiOS/HyperBidInmobi*.framework'
   end
-  
+
   spec.subspec 'HyperBidApplovinAdapter' do |ss|
      ss.dependency 'HyperBidiOS/HyperBidSDK'
      ss.ios.deployment_target = '8.0'
@@ -60,93 +60,93 @@ Pod::Spec.new do |spec|
      ss.ios.deployment_target = '8.0'
      ss.vendored_frameworks = 'HyperBidiOS/HyperBidMopub*.framework'
   end
-  
+
   spec.subspec 'HyperBidMintegralAdapter' do |ss|
      ss.dependency 'HyperBidiOS/HyperBidSDK'
      ss.ios.deployment_target = '8.0'
      ss.vendored_frameworks = 'HyperBidiOS/HyperBidMintegral*.framework'
   end
-  
+
   spec.subspec 'HyperBidGDTAdapter' do |ss|
      ss.dependency 'HyperBidiOS/HyperBidSDK'
      ss.ios.deployment_target = '8.0'
      ss.vendored_frameworks = 'HyperBidiOS/HyperBidGDT*.framework'
   end
-  
+
   spec.subspec 'HyperBidAppnextAdapter' do |ss|
      ss.dependency 'HyperBidiOS/HyperBidSDK'
      ss.ios.deployment_target = '8.0'
      ss.vendored_frameworks = 'HyperBidiOS/HyperBidAppnext*.framework'
   end
-  
+
   spec.subspec 'HyperBidChartboostAdapter' do |ss|
      ss.dependency 'HyperBidiOS/HyperBidSDK'
      ss.ios.deployment_target = '8.0'
      ss.vendored_frameworks = 'HyperBidiOS/HyperBidChartboost*.framework'
   end
-  
+
   spec.subspec 'HyperBidIronSourceAdapter' do |ss|
      ss.dependency 'HyperBidiOS/HyperBidSDK'
      ss.ios.deployment_target = '8.0'
      ss.vendored_frameworks = 'HyperBidiOS/HyperBidIronSource*.framework'
   end
-  
+
   spec.subspec 'HyperBidVungleAdapter' do |ss|
      ss.dependency 'HyperBidiOS/HyperBidSDK'
      ss.ios.deployment_target = '8.0'
      ss.vendored_frameworks = 'HyperBidiOS/HyperBidVungle*.framework'
   end
-  
+
   spec.subspec 'HyperBidAdcolonyAdapter' do |ss|
      ss.dependency 'HyperBidiOS/HyperBidSDK'
      ss.ios.deployment_target = '8.0'
      ss.vendored_frameworks = 'HyperBidiOS/HyperBidAdColony*.framework'
   end
-  
+
   spec.subspec 'HyperBidUnityAdsAdapter' do |ss|
      ss.dependency 'HyperBidiOS/HyperBidSDK'
      ss.ios.deployment_target = '8.0'
      ss.vendored_frameworks = 'HyperBidiOS/HyperBidUnityAds*.framework'
   end
-  
+
   spec.subspec 'HyperBidTapjoyAdapter' do |ss|
      ss.dependency 'HyperBidiOS/HyperBidSDK'
      ss.ios.deployment_target = '8.0'
      ss.vendored_frameworks = 'HyperBidiOS/HyperBidTapjoy*.framework'
   end
-  
+
   spec.subspec 'HyperBidBaiduAdapter' do |ss|
      ss.dependency 'HyperBidiOS/HyperBidSDK'
      ss.ios.deployment_target = '8.0'
      ss.vendored_frameworks = 'HyperBidiOS/HyperBidBaidu*.framework'
   end
-  
+
   spec.subspec 'HyperBidNendAdapter' do |ss|
      ss.dependency 'HyperBidiOS/HyperBidSDK'
      ss.ios.deployment_target = '8.0'
      ss.vendored_frameworks = 'HyperBidiOS/HyperBidNend*.framework'
   end
-  
+
   #Nend embedded framework not support
-  
+
   spec.subspec 'HyperBidMaioAdapter' do |ss|
      ss.dependency 'HyperBidiOS/HyperBidSDK'
      ss.ios.deployment_target = '8.0'
      ss.vendored_frameworks = 'HyperBidiOS/HyperBidMaio*.framework'
   end
-  
+
   spec.subspec 'HyperBidKSAdapter' do |ss|
      ss.dependency 'HyperBidiOS/HyperBidSDK'
      ss.ios.deployment_target = '8.0'
      ss.vendored_frameworks = 'HyperBidiOS/HyperBidKuaiShou*.framework'
   end
-  
+
   spec.subspec 'HyperBidSigmobAdapter' do |ss|
      ss.dependency 'HyperBidiOS/HyperBidSDK'
      ss.ios.deployment_target = '8.0'
      ss.vendored_frameworks = 'HyperBidiOS/HyperBidSigmob*.framework'
   end
-  
+
   spec.subspec 'HyperBidOguryAdapter' do |ss|
      ss.dependency 'HyperBidiOS/HyperBidSDK'
      ss.ios.deployment_target = '8.0'

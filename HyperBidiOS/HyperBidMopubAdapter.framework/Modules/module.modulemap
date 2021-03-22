@@ -1,0 +1,6 @@
+framework module HyperBidMopubAdapter {
+  umbrella header "HyperBidMopubAdapter.h"
+
+  export *
+  module * { export * }
+}

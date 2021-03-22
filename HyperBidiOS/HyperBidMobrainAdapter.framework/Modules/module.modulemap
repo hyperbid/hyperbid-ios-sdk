@@ -1,0 +1,6 @@
+framework module HyperBidMobrainAdapter {
+  umbrella header "HyperBidMobrainAdapter.h"
+
+  export *
+  module * { export * }
+}

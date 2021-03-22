@@ -1,0 +1,6 @@
+framework module OfmHyperBidAdapter {
+  umbrella header "OfmHyperBidAdapter.h"
+
+  export *
+  module * { export * }
+}
