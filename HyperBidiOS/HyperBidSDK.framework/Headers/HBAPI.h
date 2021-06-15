@@ -102,6 +102,7 @@ extern NSString *const kNetworkNameGDTOnlineApi;
 extern NSString *const kNetworkNameKidoz;
 extern NSString *const kNetworkNameMyTarget;
 extern NSString *const kNetworkNameMobrain;
+extern NSString *const kNetworkNameMax;
 
 extern NSString *const kInmobiGDPRStringKey;
 extern NSString *const kInmobiConsentStringKey;
@@ -165,6 +166,11 @@ typedef NS_ENUM(NSInteger, HBDataConsentSet) {
     HBDataConsentSetNonpersonalized = 2
 };
 
+typedef NS_ENUM(NSUInteger, HBNetworkTerritory) {
+    HBNetworkTerritory_CN = 1,
+    HBNetworkTerritory_NO_CN,
+};
+
 @interface HBAPI : NSObject
 
 +(NSDictionary<NSNumber*, NSString*>*)networkNameMap;
@@ -177,7 +183,10 @@ typedef NS_ENUM(NSInteger, HBDataConsentSet) {
  only for adx，onlineApi，MyOffer  banner&splash adLogo，NO by default
  */
 +(void) setAdLogoVisible:(BOOL)adLogoVisible;
-
+/*
+ only for pangle，Territory_CN by default
+ */
++ (void)setNetworkTerritory:(HBNetworkTerritory)territory;
 /**
  * Inspect the error parameter to see what's the matter.
  */

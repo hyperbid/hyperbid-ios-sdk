@@ -9,6 +9,7 @@
 #import "HBModel.h"
 #import <UIKit/UIKit.h>
 #import "HBMyOfferOfferModel.h"
+#import "HBBidInfo.h"
 
 @interface HBUnitGroupModel : HBModel
 -(instancetype) initWithDictionary:(NSDictionary *)dictionary;
@@ -37,6 +38,7 @@
 @property(nonatomic, readwrite) NSString *bidPrice;
 @property(nonatomic, readwrite) NSString *bidToken;
 @property(nonatomic, readonly) BOOL headerBidding;
+@property(nonatomic, readonly) HBUnitGroupType unitGroupType;
 @property(nonatomic, readonly) NSTimeInterval bidTokenTime;
 @property(nonatomic, readonly) NSTimeInterval statusTime;
 @property(nonatomic, readonly) NSString *clickTkAddress;
@@ -47,5 +49,10 @@
 @property(nonatomic, readonly) NSString *precision;
 @property(nonatomic, readonly) BOOL canAutoReady;
 @property(nonatomic, readonly) BOOL waterfallTimeOutSW;
+@property(nonatomic, readonly) BOOL reportBidPriceSW;
+@property(nonatomic, readonly) BOOL bidRealTimeLoadSW;
+@property(nonatomic, readwrite) HBBidInfo *bidInfo;
+
+@property(nonatomic, readonly, getter=isBidInfoNoPrice) BOOL bidInfoNoPrice;
 
 @end

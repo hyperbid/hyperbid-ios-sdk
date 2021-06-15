@@ -1,0 +1,6 @@
+framework module HyperBidMaxAdapter {
+  umbrella header "HyperBidMaxAdapter.h"
+
+  export *
+  module * { export * }
+}

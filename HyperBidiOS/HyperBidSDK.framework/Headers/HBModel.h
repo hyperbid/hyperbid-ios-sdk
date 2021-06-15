@@ -31,6 +31,11 @@ typedef NS_ENUM(NSInteger, HBLinkType) {
     HBLinkTypeInnerSafari = 5
 };
 
+typedef NS_ENUM(NSInteger, HBOfferLayoutType) {
+    HBOfferLayoutTypeNormal = 0,
+    HBOfferLayoutTypeExpress
+};
+
 typedef NS_ENUM(NSInteger, HBClickMode) {
     HBClickModeSync = 1,
     HBClickModeAsync
@@ -89,6 +94,12 @@ typedef NS_ENUM(NSInteger, HBClickType) {
     HBClickTypeClickJumpUrl
 };
 
+typedef NS_ENUM(NSInteger, HBUnitGroupType) {
+    HBUnitGroupTypeNormal = 1,
+    HBUnitGroupTypeAdx,
+    HBUnitGroupTypeC2S,
+    HBUnitGroupTypeS2S
+};
 
 @interface HBModel : NSObject
 -(instancetype)initWithDictionary:(NSDictionary*)dictionary;

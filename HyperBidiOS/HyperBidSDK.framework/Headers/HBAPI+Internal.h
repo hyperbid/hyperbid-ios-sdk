@@ -64,6 +64,7 @@ extern NSString *const kHBADLoadingNotificationUserInfoExtraKey;
 @interface HBAPI(Internal)
 +(BOOL)logEnabled;
 +(BOOL)adLogoVisible;
++(HBNetworkTerritory)networkTerritory;
 +(BOOL)isOfm;
 -(void) setVersion:(NSString*)version forNetwork:(NSString*)network;
 -(NSDictionary*)networkVersions;

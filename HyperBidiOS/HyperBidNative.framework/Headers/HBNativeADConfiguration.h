@@ -22,4 +22,6 @@ extern NSString *const kHBNativeAdConfigurationContextNetworkLogoViewFrameKey;//
 @property(nonatomic) CGRect mediaViewFrame;
 @property(nonatomic, weak) UIViewController *rootViewController;
 @property(nonatomic, weak) id<HBNativeADDelegate> delegate;
+@property(nonatomic) BOOL sizeToFit;
+
 @end

@@ -24,8 +24,16 @@ extern NSString *const kHBOfferBannerSize728_90;
 
 @end
 
+// v5.7.24
+typedef NS_ENUM(NSInteger, HBOfferInterActableArea) {
+    HBOfferInterActableAreaAll,
+    HBOfferInterActableAreaVisibleItems,
+    HBOfferInterActableAreaCTA
+};
+
 @interface HBOfferModel : HBModel
 
+@property(nonatomic) HBOfferInterActableArea interActableArea;
 @property(nonatomic, readwrite) NSString *resourceID;
 @property(nonatomic, readwrite) NSString *offerID;
 @property(nonatomic, readwrite) NSString *pkgName;
@@ -70,6 +78,11 @@ extern NSString *const kHBOfferBannerSize728_90;
 
 // If it is YES, it means that the feedback has been done.
 @property(nonatomic) BOOL feedback;
+
+// v5.7.45 +
+@property(nonatomic, readwrite) NSArray<NSString*>* deeplinkSuccessUrl;
+@property(nonatomic, readwrite) NSDictionary* at_deeplinkSuccessUrl;
+
 @end
 
 

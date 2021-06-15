@@ -33,6 +33,13 @@ extern NSString *const kHBOfferTrackerEndMilliTimestamp;
 extern NSString *const kHBOfferTrackerVideoTimePlayed;
 extern NSString *const kHBOfferTrackerVideoMilliTimePlayed;
 
+// for v5.7.40+
+extern NSString *const kHBOfferTrackerKYAbsoluteCoord;
+extern NSString *const kHBOfferTrackerKYRelativeCoord;
+
+// v5.7.42+
+extern NSString *const kHBOfferTrackerDeeplinkType;
+
 @interface HBOfferSetting : HBModel
 -(instancetype) initWithDictionary:(NSDictionary *)dictionary;
 
@@ -54,6 +61,7 @@ extern NSString *const kHBOfferTrackerVideoMilliTimePlayed;
 @property(nonatomic, readwrite) BOOL skipable;
 @property(nonatomic, readwrite) NSInteger splashOrientation;
 
+@property(nonatomic, readwrite) HBOfferLayoutType layoutType;
 @property(nonatomic, readwrite) HBClickMode clickMode;
 @property(nonatomic, readwrite) HBLoadType loadType;
 @property(nonatomic, readwrite) HBUserAgentType impressionUAType;

@@ -17,6 +17,7 @@ extern NSString *const kAdAssetsCustomObjectKey;
 extern NSString *const kAdAssetsUnitIDKey;
 extern NSString *const kAdAssetsPriceKey;
 extern NSString *const kAdAssetsBidIDKey;
+extern NSString *const kAdAssetsTpBidIDKey;
 
 typedef NS_ENUM(NSInteger, HBAdSourceStatus) {
     HBAdSourceStatusInvalid = 0,//pacing & cap_by_hour/cap_by_day
@@ -36,6 +37,10 @@ typedef NS_ENUM(NSInteger, HBAdSourceStatus) {
  
  */
 -(NSArray<id<HBAd>>*) adsWithPlacementID:(NSString*)placementID;
+
+-(id<HBAd>) adWithPlacementModel:(HBPlacementModel*)placementModel unitGroup:(HBUnitGroupModel*)unitGroup;
+
+-(NSArray<id<HBAd>>*) availableStatusAdsWithPlacementModel:(HBPlacementModel*)placementModel;
 
 /**
  * Clear all cached offer

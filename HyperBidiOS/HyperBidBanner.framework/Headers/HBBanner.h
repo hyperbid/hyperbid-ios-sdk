@@ -30,6 +30,7 @@
 @property(nonatomic, readonly) HBBannerCustomEvent *customEvent;
 @property(nonatomic, readonly) NSString *price;
 @property(nonatomic, readonly) NSString *bidId;
+@property(nonatomic, readonly) NSString *tpBidId;
 @property(nonatomic, readonly, weak) HBWaterfall *finalWaterfall;
 @property(nonatomic, readonly) NSInteger autoReqType;
 @property(nonatomic) BOOL defaultPlayIfRequired;

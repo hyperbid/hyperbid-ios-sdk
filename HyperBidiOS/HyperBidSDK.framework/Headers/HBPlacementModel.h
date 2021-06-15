@@ -94,9 +94,13 @@ extern NSString *const kPlacementModelCustomDataKey;
 @property(nonatomic, readonly) NSArray<HBUnitGroupModel*>* unitGroups;
 @property(nonatomic, readonly) NSArray<HBUnitGroupModel*>* headerBiddingUnitGroups;
 @property(nonatomic, readonly) NSArray<HBUnitGroupModel*>* S2SHeaderBiddingUnitGroups;
+@property(nonatomic, readonly) NSArray<HBUnitGroupModel*>* olApiUnitGroups;
+@property(nonatomic, readonly) NSArray<HBUnitGroupModel*>* inhouseUnitGroups;
+
 @property(nonatomic, readonly) NSTimeInterval headerBiddingRequestTimeout;
 @property(nonatomic, readonly) NSTimeInterval headerBiddingRequestTolerateInterval;
 @property(nonatomic, readonly) NSString *S2SBidRequestAddress;
+@property(nonatomic, readonly) NSString *waterFallBidRequestAddress;
 
 @property(nonatomic, readonly) NSTimeInterval loadCapDuration;
 @property(nonatomic, readonly) NSInteger loadCap;
@@ -133,12 +137,13 @@ extern NSString *const kPlacementModelCustomDataKey;
 @property(nonatomic, readonly) NSArray<HBUnitGroupModel*>* adxUnitGroups;
 
 @property(nonatomic, readonly) NSDictionary* olApiSettingDict;
-@property(nonatomic, readonly) NSArray<HBUnitGroupModel*>* olApiUnitGroups;
 
-@property(nonatomic, readonly) NSArray<HBUnitGroupModel*>* inhouseUnitGroups;
 
 @property(nonatomic, readonly) NSString *currency;
 @property(nonatomic, readonly) NSString *exchangeRate;
+
+@property(nonatomic, readonly) NSArray *bURLNotificationFirms;
+
 
 // v5.7.10
 @property(nonatomic, readonly) NSString *campaign;

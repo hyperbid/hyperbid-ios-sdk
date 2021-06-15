@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "HBAd.h"
 #import "HBTracker.h"
+#import "HBBidInfo.h"
 
 extern NSString *const kHBSDKFailedToLoadSplashADMsg;
 extern NSString *const kHBSDKFailedToLoadBannerADMsg;
@@ -49,4 +50,7 @@ extern NSString *const kHBAdAssetsAppIDKey;
 
 @property (nonatomic, assign) NSString *networkUnitId;
 @property (nonatomic) NSDictionary *networkCustomInfo;
+@property (nonatomic) NSDictionary *headerBiddingExtra;
+-(void)assetsHeaderBiddingTrackingExtraWithBidInfo:(HBBidInfo*)bidInfo;
+
 @end
