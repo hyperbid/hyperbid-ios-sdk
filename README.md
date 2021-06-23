@@ -1,4 +1,4 @@
-[![CocoaPods](https://img.shields.io/cocoapods/v/hyperbid-ios-sdk.svg)](https://cocoapods.org/pods/hyperbid-ios-sdk)
+[![CocoaPods](https://img.shields.io/cocoapods/v/hyperbid-ios-sdk.svg)](https://cocoapods.org/pods/HyperBidiOS)
 
 hyperbid-ios-sdk
 ================
