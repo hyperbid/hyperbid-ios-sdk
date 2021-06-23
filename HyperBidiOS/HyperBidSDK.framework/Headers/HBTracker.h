@@ -15,7 +15,7 @@ extern NSString *const kHBTrackerExtraSDKNotCalledReasonKey;
 extern NSString *const kHBTrackerExtraLoadFailureReasonKey;
 extern NSString *const kHBTrackerExtraASIDKey;
 extern NSString *const kHBTrackerExtraStatusKey;
-extern NSString *const HBTrackerExtraShownNetworkPriorityInfoKey;
+extern NSString *const kHBTrackerExtraShownNetworkPriorityInfoKey;
 extern NSString *const kHBTrackerExtraHeaderBiddingInfoKey;
 extern NSString *const kHBTrackerExtraResourceTypeKey;
 extern NSString *const kHBTrackerExtraUnitIDKey;//Ad source id

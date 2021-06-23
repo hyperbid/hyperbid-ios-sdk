@@ -9,13 +9,13 @@
 #import <HyperBidSDK/HyperBidSDK.h>
 
 //Currently only GDT supports these two keys.
-extern NSString *const kExtraInfoNativeAdSizeKey;//the value has to be an NSValue wrapped CGSize object.
-extern NSString *const kExtraInfoNativeAdTypeKey;//The value is requried for GDT native ad and has to be an NSNumber warpped HBGDTNativeAdType(NSInteger); Pass @(HBGDTNativeAdTypeTemplate)(@1) for template ads and @(HBGDTNativeAdTypeSelfRendering)(@2) for self rendering ads.
+extern NSString *const kHBExtraInfoNativeAdSizeKey;//the value has to be an NSValue wrapped CGSize object.
+extern NSString *const kHBExtraInfoNativeAdTypeKey;//The value is requried for GDT native ad and has to be an NSNumber warpped HBGDTNativeAdType(NSInteger); Pass @(HBGDTNativeAdTypeTemplate)(@1) for template ads and @(HBGDTNativeAdTypeSelfRendering)(@2) for self rendering ads.
 //Following keys are supported by nend only
-extern NSString *const kExtraInfoNativeAdUserIDKey;
-extern NSString *const kExtraInfoNativeAdMediationNameKey;
-extern NSString *const kExtraInfoNaitveAdUserFeatureKey;
-extern NSString *const kExtraInfoNativeAdLocationEnabledFlagKey;
+extern NSString *const kHBExtraInfoNativeAdUserIDKey;
+extern NSString *const kHBExtraInfoNativeAdMediationNameKey;
+extern NSString *const kHBExtraInfoNaitveAdUserFeatureKey;
+extern NSString *const kHBExtraInfoNativeAdLocationEnabledFlagKey;
 typedef NS_ENUM(NSInteger, HBGDTNativeAdType) {
     HBGDTNativeAdTypeTemplate = 1,
     HBGDTNativeAdTypeSelfRendering = 2

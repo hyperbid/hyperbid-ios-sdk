@@ -17,7 +17,7 @@ extern NSString *const kHBSDKFailedToLoadInterstitialADMsg;
 extern NSString *const kHBSDKFailedToLoadNativeADMsg;
 extern NSString *const kHBSDKFailedToLoadRewardedVideoADMsg;
 extern NSString *const kHBSDKSplashADTooLongToLoadPlacementSettingMsg;
-extern NSString *const kSDKImportIssueErrorReason;
+extern NSString *const kHBSDKImportIssueErrorReason;
 extern NSString *const kHBAdAssetsAppIDKey;
 @interface HBAdCustomEvent : NSObject
 +(NSDictionary*)customInfoWithUnitGroupModel:(HBUnitGroupModel*)unitGroupModel extra:(NSDictionary*)extra;

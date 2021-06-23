@@ -36,8 +36,8 @@ typedef NS_ENUM(NSInteger, HBRevenueToPlatform) {
     HBRevenueToPlatformAppsflyer = 2,
     HBRevenueToPlatformTenjin
 };
-extern NSString *const kPlacementModelCacheDateKey;
-extern NSString *const kPlacementModelCustomDataKey;
+extern NSString *const kHBPlacementModelCacheDateKey;
+extern NSString *const kHBPlacementModelCustomDataKey;
 @interface HBPlacementModelExtra:HBModel
 @property(nonatomic, readonly) BOOL cachesPlacementSetting;
 @property(nonatomic, readonly) NSTimeInterval defaultAdSourceLoadingDelay;

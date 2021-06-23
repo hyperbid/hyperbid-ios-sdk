@@ -8,11 +8,11 @@
 
 #ifndef HBAdAdapter_h
 #define HBAdAdapter_h
-extern NSString *const kADapterCustomInfoStatisticsInfoKey;
-extern NSString *const kAdapterCustomInfoPlacementModelKey;
-extern NSString *const kAdapterCustomInfoUnitGroupModelKey;
-extern NSString *const kAdapterCustomInfoRequestIDKey;
-extern NSString *const kAdapterCustomInfoExtraKey;
+extern NSString *const kHBADapterCustomInfoStatisticsInfoKey;
+extern NSString *const kHBAdapterCustomInfoPlacementModelKey;
+extern NSString *const kHBAdapterCustomInfoUnitGroupModelKey;
+extern NSString *const kHBAdapterCustomInfoRequestIDKey;
+extern NSString *const kHBAdapterCustomInfoExtraKey;
 @protocol HBAd;
 @class HBPlacementModel;
 @class HBUnitGroupModel;

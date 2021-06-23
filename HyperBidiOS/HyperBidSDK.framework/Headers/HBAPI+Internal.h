@@ -9,22 +9,22 @@
 #ifndef HBAPI_Internal_h
 #define HBAPI_Internal_h
 #import "HBAPI.h"
-extern NSString *const kNativeADAssetsAdvertiserKey;
-extern NSString *const kNativeADAssetsMainTextKey;
-extern NSString *const kNativeADAssetsMainTitleKey;
-extern NSString *const kNativeADAssetsMainImageKey;
-extern NSString *const kNativeADAssetsIconImageKey;
-extern NSString *const kNativeADAssetsLogoImageKey;
-extern NSString *const kNativeADAssetsCTATextKey;
-extern NSString *const kNativeADAssetsRatingKey;
-extern NSString *const kNativeADAssetsContainsVideoFlag;
-extern NSString *const kNativeADAssetsUnitIDKey;
-extern NSString *const kNativeADAssetsIconURLKey;
-extern NSString *const kNativeADAssetsImageURLKey;
-extern NSString *const kNativeADAssetsLogoURLKey;
-extern NSString *const kNativeADAssetsSponsoredImageKey;
+extern NSString *const kHBNativeADAssetsAdvertiserKey;
+extern NSString *const kHBNativeADAssetsMainTextKey;
+extern NSString *const kHBNativeADAssetsMainTitleKey;
+extern NSString *const kHBNativeADAssetsMainImageKey;
+extern NSString *const kHBNativeADAssetsIconImageKey;
+extern NSString *const kHBNativeADAssetsLogoImageKey;
+extern NSString *const kHBNativeADAssetsCTATextKey;
+extern NSString *const kHBNativeADAssetsRatingKey;
+extern NSString *const kHBNativeADAssetsContainsVideoFlag;
+extern NSString *const kHBNativeADAssetsUnitIDKey;
+extern NSString *const kHBNativeADAssetsIconURLKey;
+extern NSString *const kHBNativeADAssetsImageURLKey;
+extern NSString *const kHBNativeADAssetsLogoURLKey;
+extern NSString *const kHBNativeADAssetsSponsoredImageKey;
 
-extern NSString *const kAdAssetsCustomObjectKey;
+extern NSString *const kHBAdAssetsCustomObjectKey;
 
 extern NSString *const kHBADLoadingStartLoadNotification;
 extern NSString *const kHBADLoadingOfferSuccessfullyLoadedNotification;

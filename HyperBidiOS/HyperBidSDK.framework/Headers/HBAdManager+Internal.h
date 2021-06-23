@@ -14,39 +14,39 @@
 #import "HBAdManager.h"
 #import "HBAd.h"
 //The value is (subclass of) UIViewController
-extern NSString *const kExtraInfoRootViewControllerKey;
-extern NSString *const kAdLoadingExtraRefreshFlagKey;//Defined in loader
-extern NSString *const kAdLoadingExtraAutoloadFlagKey;
-extern NSString *const kAdLoadingTrackingExtraStatusKey;
-extern NSString *const kAdLoadingTrackingExtraFlagKey;
-extern NSString *const kAdLoadingExtraDefaultLoadKey;
-extern NSString *const kAdLoadingExtraFilledByReadyFlagKey;
-extern NSString *const kAdLoadingExtraAutoLoadOnCloseFlagKey;
+extern NSString *const kHBExtraInfoRootViewControllerKey;
+extern NSString *const kHBAdLoadingExtraRefreshFlagKey;//Defined in loader
+extern NSString *const kHBAdLoadingExtraAutoloadFlagKey;
+extern NSString *const kHBAdLoadingTrackingExtraStatusKey;
+extern NSString *const kHBAdLoadingTrackingExtraFlagKey;
+extern NSString *const kHBAdLoadingExtraDefaultLoadKey;
+extern NSString *const kHBAdLoadingExtraFilledByReadyFlagKey;
+extern NSString *const kHBAdLoadingExtraAutoLoadOnCloseFlagKey;
 
 /*
  Defined in Storage Utility
  */
-extern NSString *const kAdStorageExtraNotReadyReasonKey;
-extern NSString *const kAdStorageExtraNeedReloadFlagKey;
-extern NSString *const kAdStorageExtraPlacementIDKey;
-extern NSString *const kAdStorageExtraRequestIDKey;
-extern NSString *const kAdStorageExtraReadyFlagKey;
-extern NSString *const kAdStorageExtraCallerInfoKey;
-extern NSString *const kAdStorageExtraPSIDKey;
-extern NSString *const kAdStorageExtraSessionIDKey;
-extern NSString *const kAdStorageExtraHeaderBiddingInfo;
-extern NSString *const kAdStoreageExtraUnitGroupUnitID;
-extern NSString *const kAdStorageExtraNetworkFirmIDKey;
-extern NSString *const kAdStorageExtraNetworkSDKVersion;
-extern NSString *const kAdStorageExtraPriorityKey;
-extern NSString *const kAdStorageExtraUnitGroupInfosKey;
-extern NSString *const kAdStorageExtraUnitGroupInfoContentKey;
-extern NSString *const kAdStorageExtraUnitGroupInfoPriorityKey;
-extern NSString *const kAdStorageExtraUnitGroupInfoNetworkFirmIDKey;
-extern NSString *const kAdStorageExtraUnitGroupInfoUnitIDKey;
-extern NSString *const kAdStorageExtraUnitGroupInfoNetworkSDKVersionKey;
-extern NSString *const kAdStorageExtraUnitGroupInfoReadyFlagKey;
-extern NSString *const kAdStorageExtraFinalWaterfallKey;
+extern NSString *const kHBAdStorageExtraNotReadyReasonKey;
+extern NSString *const kHBAdStorageExtraNeedReloadFlagKey;
+extern NSString *const kHBAdStorageExtraPlacementIDKey;
+extern NSString *const kHBAdStorageExtraRequestIDKey;
+extern NSString *const kHBAdStorageExtraReadyFlagKey;
+extern NSString *const kHBAdStorageExtraCallerInfoKey;
+extern NSString *const kHBAdStorageExtraPSIDKey;
+extern NSString *const kHBAdStorageExtraSessionIDKey;
+extern NSString *const kHBAdStorageExtraHeaderBiddingInfo;
+extern NSString *const kHBAdStoreageExtraUnitGroupUnitID;
+extern NSString *const kHBAdStorageExtraNetworkFirmIDKey;
+extern NSString *const kHBAdStorageExtraNetworkSDKVersion;
+extern NSString *const kHBAdStorageExtraPriorityKey;
+extern NSString *const kHBAdStorageExtraUnitGroupInfosKey;
+extern NSString *const kHBAdStorageExtraUnitGroupInfoContentKey;
+extern NSString *const kHBAdStorageExtraUnitGroupInfoPriorityKey;
+extern NSString *const kHBAdStorageExtraUnitGroupInfoNetworkFirmIDKey;
+extern NSString *const kHBAdStorageExtraUnitGroupInfoUnitIDKey;
+extern NSString *const kHBAdStorageExtraUnitGroupInfoNetworkSDKVersionKey;
+extern NSString *const kHBAdStorageExtraUnitGroupInfoReadyFlagKey;
+extern NSString *const kHBAdStorageExtraFinalWaterfallKey;
 
 typedef NS_ENUM(NSInteger, HBAdManagerReadyAPICaller) {
     HBAdManagerReadyAPICallerReady = 0,

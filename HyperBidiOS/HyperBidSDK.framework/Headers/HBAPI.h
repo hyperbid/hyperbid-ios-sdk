@@ -66,64 +66,64 @@ extern NSString *const HBSDKInitErrorDomain;
 extern NSInteger const HBSDKInitErrorCodeDataConsentNotSet;
 extern NSInteger const HBSDKInitErrorCodeDataConsentForbidden;
 
-extern NSString *const kNetworkNameFyber;
-extern NSString *const kNetworkNameStartApp;
-extern NSString *const kNetworkNameFacebook;
-extern NSString *const kNetworkNameInmobi;
-extern NSString *const kNetworkNameAdmob;
-extern NSString *const kNetworkNameFlurry;
-extern NSString *const kNetworkNameMintegral;
-extern NSString *const kNetworkNameApplovin;
-extern NSString *const kNetworkNameGDT;
-extern NSString *const kNetworkNameMopub;
-extern NSString *const kNetworkNameTapjoy;
-extern NSString *const kNetworkNameChartboost;
-extern NSString *const kNetworkNameIronSource;
-extern NSString *const kNetworkNameVungle;
-extern NSString *const kNetworkNameAdColony;
-extern NSString *const kNetworkNameUnityAds;
-extern NSString *const kNetworkNameTT;
-extern NSString *const kNetworkNameOneway;
-extern NSString *const kNetworkNameAppnext;
-extern NSString *const kNetworkNameYeahmobi;
-extern NSString *const kNetworkNameBaidu;
-extern NSString *const kNetworkNameMobPower;
-extern NSString *const kNetworkNameNend;
-extern NSString *const kNetworkNameMaio;
-extern NSString *const kNetworkNameSigmob;
-extern NSString *const kNetworkNameMyOffer;
-extern NSString *const kNetworkNameKS;
-extern NSString *const kNetworkNameOgury;
-extern NSString *const kNetworkNameGoogleAdManager;
-extern NSString *const kNetworkNameADX;
-extern NSString *const kNetworkNameHelium;
-extern NSString *const kNetworkNameMintegralOnlineApi;
-extern NSString *const kNetworkNameGDTOnlineApi;
-extern NSString *const kNetworkNameKidoz;
-extern NSString *const kNetworkNameMyTarget;
-extern NSString *const kNetworkNameMobrain;
-extern NSString *const kNetworkNameMax;
+extern NSString *const kHBNetworkNameFyber;
+extern NSString *const kHBNetworkNameStartApp;
+extern NSString *const kHBNetworkNameFacebook;
+extern NSString *const kHBNetworkNameInmobi;
+extern NSString *const kHBNetworkNameAdmob;
+extern NSString *const kHBNetworkNameFlurry;
+extern NSString *const kHBNetworkNameMintegral;
+extern NSString *const kHBNetworkNameApplovin;
+extern NSString *const kHBNetworkNameGDT;
+extern NSString *const kHBNetworkNameMopub;
+extern NSString *const kHBNetworkNameTapjoy;
+extern NSString *const kHBNetworkNameChartboost;
+extern NSString *const kHBNetworkNameIronSource;
+extern NSString *const kHBNetworkNameVungle;
+extern NSString *const kHBNetworkNameAdColony;
+extern NSString *const kHBNetworkNameUnityAds;
+extern NSString *const kHBNetworkNameTT;
+extern NSString *const kHBNetworkNameOneway;
+extern NSString *const kHBNetworkNameAppnext;
+extern NSString *const kHBNetworkNameYeahmobi;
+extern NSString *const kHBNetworkNameBaidu;
+extern NSString *const kHBNetworkNameMobPower;
+extern NSString *const kHBNetworkNameNend;
+extern NSString *const kHBNetworkNameMaio;
+extern NSString *const kHBNetworkNameSigmob;
+extern NSString *const kHBNetworkNameMyOffer;
+extern NSString *const kHBNetworkNameKS;
+extern NSString *const kHBNetworkNameOgury;
+extern NSString *const kHBNetworkNameGoogleAdManager;
+extern NSString *const kHBNetworkNameADX;
+extern NSString *const kHBNetworkNameHelium;
+extern NSString *const kHBNetworkNameMintegralOnlineApi;
+extern NSString *const kHBNetworkNameGDTOnlineApi;
+extern NSString *const kHBNetworkNameKidoz;
+extern NSString *const kHBNetworkNameMyTarget;
+extern NSString *const kHBNetworkNameMobrain;
+extern NSString *const kHBNetworkNameMax;
 
-extern NSString *const kInmobiGDPRStringKey;
-extern NSString *const kInmobiConsentStringKey;
+extern NSString *const kHBInmobiGDPRStringKey;
+extern NSString *const kHBInmobiConsentStringKey;
 
-extern NSString *const kAdmobConsentStatusKey;
-extern NSString *const kAdmobUnderAgeKey;
+extern NSString *const kHBAdmobConsentStatusKey;
+extern NSString *const kHBAdmobUnderAgeKey;
 
-extern NSString *const kApplovinConscentStatusKey;
-extern NSString *const kApplovinUnderAgeKey;
+extern NSString *const kHBApplovinConscentStatusKey;
+extern NSString *const kHBApplovinUnderAgeKey;
 
-extern NSString *const kTapjoyConsentValueKey;
-extern NSString *const kTapjoyGDPRSubjectionKey;
+extern NSString *const kHBTapjoyConsentValueKey;
+extern NSString *const kHBTapjoyGDPRSubjectionKey;
 
-extern NSString *const kFlurryConsentGDPRScopeFlagKey;
-extern NSString *const kFlurryConsentConsentStringKey;
+extern NSString *const kHBFlurryConsentGDPRScopeFlagKey;
+extern NSString *const kHBFlurryConsentConsentStringKey;
 
-extern NSString *const kAdColonyGDPRConsiderationFlagKey;
-extern NSString *const kAdColonyGDPRConsentStringKey;
+extern NSString *const kHBAdColonyGDPRConsiderationFlagKey;
+extern NSString *const kHBAdColonyGDPRConsentStringKey;
 
-extern NSString *const kYeahmobiGDPRConsentValueKey;
-extern NSString *const kYeahmobiGDPRConsentTypeKey;
+extern NSString *const kHBYeahmobiGDPRConsentValueKey;
+extern NSString *const kHBYeahmobiGDPRConsentTypeKey;
 
 extern NSString *const kHBCustomDataUserIDKey;//string
 extern NSString *const kHBCustomDataAgeKey;//Integer
@@ -222,12 +222,12 @@ typedef NS_ENUM(NSUInteger, HBNetworkTerritory) {
  * Set network consent info individually; according to the network specifications, types for the info you should provide for the networks should be as follows:
  * Mintegral: dictionary, in which you can either set @YES/@NO for key @0 to allow/prevent all three types of data collection(example, @{@0:@YES}), or you can set @YES/@NO each for @1, @2, @3 keys respectively(example, @{@1:@YES, @2:@NO, @3:@YES});for more detailed infomation, please refer to its official website.
  * Inmobi: A dictionary containing the follow keys and values:
-    1) An string, @"0" means user not being in GDPR area, @"1" otherwise, with key kInmobiGDPRStringKey
-    2) An string, @"true" means user having granted consent, @"false" otherwise with key kInmobiConsentStringKey
+    1) An string, @"0" means user not being in GDPR area, @"1" otherwise, with key kHBInmobiGDPRStringKey
+    2) An string, @"true" means user having granted consent, @"false" otherwise with key kHBInmobiConsentStringKey
  * Mopub: BOOL wrapped as an NSNumber
  * Admob: A dictionary containing the follow keys and values:
- *       1) An NSInteger wrapped as an NSNumber specifying the consent status(0=unknown, 1=non personalized or 2=personalized), under the key kAdmobConsentStatusKey
- *       2) A BOOL wrapped as an NSNumber indicating whether you as a developer are aware that the user is under the age of conscent, under the key kAdmobUnderAgeKey
+ *       1) An NSInteger wrapped as an NSNumber specifying the consent status(0=unknown, 1=non personalized or 2=personalized), under the key kHBAdmobConsentStatusKey
+ *       2) A BOOL wrapped as an NSNumber indicating whether you as a developer are aware that the user is under the age of conscent, under the key kHBAdmobUnderAgeKey
  * Applovin: A dictionary containing the following keys and values:
  *       1) A BOOL wrapped as an NSNumber indicating if user has provided consent for information sharing with AppLovin, under the key
  *       2) A BOOL wrapped as an NSNumber indicating if the user is age restricted
@@ -252,17 +252,17 @@ typedef NS_ENUM(NSUInteger, HBNetworkTerritory) {
  * UnityAds: A BOOL wrapped as an NSNumber.
 
  * Example: {
-            kNetworkNameMintegral:@{@1:@YES, @2:@YES, @3:@NO},
-            kNetworkNameInmobi:@YES,
-            kNetworkNameMopub:@NO,
-            kNetworkNameAdmob:@{kAdmobConsentStatusKey:@1, kAdmobUnderAgeKey:@NO},
-            kNetworkNameApplovin:@{kApplovinConscentStatusKey:@YES, kApplovinUnderAgeKey:@NO},
-            kNetworkNameTapjoy:@{kTapjoyConsentValueKey:@"0",kTapjoyGDPRSubjectionKey:@NO},
-            kNetworkNameChartboost:@NO,
-            kNetworkNameVungle:@1,
-            kNetworkNameIronSource:NO,
-            kNetworkNameAdColony:@{kAdColonyGDPRConsentStringKey:@"0",kAdColonyGDPRConsiderationFlagKey:@NO},
-            kNetworkNameUnityAds:@YES
+            kHBNetworkNameMintegral:@{@1:@YES, @2:@YES, @3:@NO},
+            kHBNetworkNameInmobi:@YES,
+            kHBNetworkNameMopub:@NO,
+            kHBNetworkNameAdmob:@{kHBAdmobConsentStatusKey:@1, kHBAdmobUnderAgeKey:@NO},
+            kHBNetworkNameApplovin:@{kHBApplovinConscentStatusKey:@YES, kHBApplovinUnderAgeKey:@NO},
+            kHBNetworkNameTapjoy:@{kHBTapjoyConsentValueKey:@"0",kHBTapjoyGDPRSubjectionKey:@NO},
+            kHBNetworkNameChartboost:@NO,
+            kHBNetworkNameVungle:@1,
+            kHBNetworkNameIronSource:NO,
+            kHBNetworkNameAdColony:@{kHBAdColonyGDPRConsentStringKey:@"0",kHBAdColonyGDPRConsiderationFlagKey:@NO},
+            kHBNetworkNameUnityAds:@YES
  *          }
  */
 @property(nonatomic) NSDictionary *networkConsentInfo;
