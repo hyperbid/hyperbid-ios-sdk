@@ -43,7 +43,7 @@ typedef NS_ENUM(NSInteger, HBUnitGroupFinishType) {
 -(HBUnitGroupModel*) unitGroupWithMinimumPrice;
 -(BOOL)canContinueLoading:(BOOL)waitForSentRequests;
 -(void) enumerateTimeoutUnitGroupWithBlock:(void(^)(HBUnitGroupModel*unitGroup))block;
-@property(nonatomic, readonly) NSMutableArray<HBUnitGroupModel*>* unitGroups;
+@property(nonatomic, strong) NSMutableArray<HBUnitGroupModel*>* unitGroups;
 @property(nonatomic, readonly) NSUInteger numberOfTimeoutRequests;
 @property(nonatomic, readonly) HBWaterfallType type;
 @property(nonatomic, readonly, getter=isLoading) BOOL loading;
