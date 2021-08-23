@@ -147,7 +147,7 @@ Pod::Spec.new do |spec|
      ss.vendored_frameworks = 'HyperBidiOS/HyperBidOgury*.framework'
   end
 
-  spec.subspec 'HyperBidTouTiaoAdapter' do |ss|
+  spec.subspec 'HyperBidPangleAdapter' do |ss|
      ss.dependency 'HyperBidiOS/HyperBidSDK'
      ss.ios.deployment_target = '9.0'
      ss.vendored_frameworks = 'HyperBidiOS/HyperBidPangle*.framework'
