@@ -95,9 +95,7 @@ Pod::Spec.new do |spec|
   end
   
     spec.subspec 'HyperBidBaiduAdapter' do |ss|
-    # ss.dependency 'BaiduMobAdSDK','4.82'
-    ss.dependency 'HyperBidBaiduSDK','4.82'
-
+    ss.dependency 'BaiduMobAdSDK','4.82'
     ss.ios.deployment_target = '9.0'
     ss.dependency 'HyperBidiOS/HyperBidSDK'
     ss.vendored_frameworks = 'HyperBidiOS/HyperBidBaiduAdapter.framework'
@@ -169,7 +167,7 @@ Pod::Spec.new do |spec|
   
     spec.subspec 'HyperBidAdmobAdapter' do |ss|
     ss.dependency 'Google-Mobile-Ads-SDK','8.10.0'
-    ss.dependency 'PersonalizedAdConsent'
+    # ss.dependency 'PersonalizedAdConsent'
     ss.ios.deployment_target = '9.0'
     ss.dependency 'HyperBidiOS/HyperBidSDK'
     ss.vendored_frameworks = 'HyperBidiOS/HyperBidAdmobAdapter.framework'
