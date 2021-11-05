@@ -11,6 +11,9 @@ Changelog
 ---------
 <!--(CHANGELOG_TOP)-->
 **5.7.78**
+* Updated 3rd party providers
+
+**5.7.78**
 * Updated adapters for 3rd party providers
 
 **5.7.53**
