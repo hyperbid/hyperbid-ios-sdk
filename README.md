@@ -10,6 +10,9 @@ Documentation can be found [here](https://docs.hyperbid.com/#/en-us/ios/GetStart
 Changelog
 ---------
 <!--(CHANGELOG_TOP)-->
+**5.8.13**
+* v5.8.13
+
 
 **5.7.78**
 * Updated adapters for 3rd party providers

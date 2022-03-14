@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "HyperBidiOS"
-  spec.version      = "5.7.79"
+  spec.version      = "5.8.13"
   spec.summary      = "HyperBid SDK for iOS."
   spec.description  = <<-DESC
             This is the HyperBid SDK for iOS.
@@ -35,7 +35,7 @@ Pod::Spec.new do |spec|
   end
 
     spec.subspec 'HyperBidGDTAdapter' do |ss|
-    ss.dependency 'GDTMobSDK','4.13.11'
+    ss.dependency 'GDTMobSDK','4.13.41'
     ss.ios.deployment_target = '9.0'
     ss.dependency 'HyperBidiOS/HyperBidSDK'
     ss.vendored_frameworks = 'HyperBidiOS/HyperBidGDTAdapter.framework'
@@ -57,21 +57,21 @@ Pod::Spec.new do |spec|
   end
 
     spec.subspec 'HyperBidUnityAdsAdapter' do |ss|
-    ss.dependency 'UnityAds','3.7.5'
+    ss.dependency 'UnityAds','4.0.0'
     ss.ios.deployment_target = '9.0'
     ss.dependency 'HyperBidiOS/HyperBidSDK'
     ss.vendored_frameworks = 'HyperBidiOS/HyperBidUnityAdsAdapter.framework'
   end
 
     spec.subspec 'HyperBidSigmobAdapter' do |ss|
-    ss.dependency 'SigmobAd-iOS','3.2.5'
+    ss.dependency 'SigmobAd-iOS','3.5.0'
     ss.ios.deployment_target = '9.0'
     ss.dependency 'HyperBidiOS/HyperBidSDK'
     ss.vendored_frameworks = 'HyperBidiOS/HyperBidSigmobAdapter.framework'
   end
 
     spec.subspec 'HyperBidKSAdapter' do |ss|
-    ss.dependency 'KSAdSDK','3.3.15.1'
+    ss.dependency 'KSAdSDK','3.3.18.1'
     ss.dependency 'SDWebImage'
     ss.dependency 'MJExtension'
     ss.dependency 'AFNetworking'
@@ -95,7 +95,7 @@ Pod::Spec.new do |spec|
   end
 
     spec.subspec 'HyperBidBaiduAdapter' do |ss|
-    ss.dependency 'BaiduMobAdSDK','4.82'
+    ss.dependency 'BaiduMobAdSDK','4.843'
     ss.ios.deployment_target = '9.0'
     ss.dependency 'HyperBidiOS/HyperBidSDK'
     ss.vendored_frameworks = 'HyperBidiOS/HyperBidBaiduAdapter.framework'
@@ -123,7 +123,7 @@ Pod::Spec.new do |spec|
   end
 
     spec.subspec 'HyperBidFyberAdapter' do |ss|
-    ss.dependency 'Fyber_Marketplace_SDK','7.8.9'
+    ss.dependency 'Fyber_Marketplace_SDK','8.1.1'
     ss.ios.deployment_target = '9.0'
     ss.dependency 'HyperBidiOS/HyperBidSDK'
     ss.vendored_frameworks = 'HyperBidiOS/HyperBidFyberAdapter.framework'
@@ -145,7 +145,7 @@ Pod::Spec.new do |spec|
   end
 
     spec.subspec 'HyperBidIronSourceAdapter' do |ss|
-    ss.dependency 'IronSourceSDK','7.1.11.0'
+    ss.dependency 'IronSourceSDK','7.1.14.0'
     ss.ios.deployment_target = '9.0'
     ss.dependency 'HyperBidiOS/HyperBidSDK'
     ss.vendored_frameworks = 'HyperBidiOS/HyperBidIronSourceAdapter.framework'
@@ -159,14 +159,14 @@ Pod::Spec.new do |spec|
   end
 
     spec.subspec 'HyperBidMintegralAdapter' do |ss|
-    ss.dependency 'MintegralAdSDK/All','7.0.3'
+    ss.dependency 'MintegralAdSDK/All','7.1.0'
     ss.ios.deployment_target = '9.0'
     ss.dependency 'HyperBidiOS/HyperBidSDK'
     ss.vendored_frameworks = 'HyperBidiOS/HyperBidMintegralAdapter.framework'
   end
 
     spec.subspec 'HyperBidAdmobAdapter' do |ss|
-    ss.dependency 'Google-Mobile-Ads-SDK','8.10.0'
+    ss.dependency 'Google-Mobile-Ads-SDK','8.13.0'
     # ss.dependency 'PersonalizedAdConsent'
     ss.ios.deployment_target = '9.0'
     ss.dependency 'HyperBidiOS/HyperBidSDK'
@@ -174,7 +174,7 @@ Pod::Spec.new do |spec|
   end
 
     spec.subspec 'HyperBidFacebookAdapter' do |ss|
-    ss.dependency 'FBAudienceNetwork','6.7.0'
+    ss.dependency 'FBAudienceNetwork','6.9.0'
     ss.ios.deployment_target = '9.0'
     ss.dependency 'HyperBidiOS/HyperBidSDK'
     ss.vendored_frameworks = 'HyperBidiOS/HyperBidFacebookAdapter.framework'
@@ -216,8 +216,8 @@ Pod::Spec.new do |spec|
   end
 
     spec.subspec 'HyperBidPangleGlobalAdapter' do |ss|
-    ss.dependency 'Ads-CN-Beta','4.0.0.0'
-    ss.dependency 'Ads-CN-Beta/International','4.0.0.0'
+    ss.dependency 'Ads-CN-Beta','4.2.5.2'
+    ss.dependency 'Ads-CN-Beta/International','4.2.5.2'
     # ss.dependency 'Ads-CN','3.9.0.4'
     # ss.dependency 'Ads-CN/International','3.9.0.4'
     ss.ios.deployment_target = '9.0'
