@@ -180,12 +180,6 @@ Pod::Spec.new do |spec|
     ss.vendored_frameworks = 'HyperBidiOS/HyperBidFacebookAdapter.framework'
   end
 
- #   spec.subspec 'HyperBidMopubAdapter' do |ss|
- #  ss.dependency 'mopub-ios-sdk','5.18.0'
- #   ss.ios.deployment_target = '10.0'
- #   ss.dependency 'HyperBidiOS/HyperBidSDK'
- #   ss.vendored_frameworks = 'HyperBidiOS/HyperBidMopubAdapter.framework'
- # end
 
     spec.subspec 'HyperBidKidozAdapter' do |ss|
     ss.dependency 'HyperBidKidozSDK','1.3.6'
