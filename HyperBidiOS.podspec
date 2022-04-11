@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "HyperBidiOS"
-  spec.version      = "5.8.13"
+  spec.version      = "5.8.14"
   spec.summary      = "HyperBid SDK for iOS."
   spec.description  = <<-DESC
             This is the HyperBid SDK for iOS.
