@@ -203,7 +203,7 @@ Pod::Spec.new do |spec|
   end
 
     spec.subspec 'HyperBidKlevinAdapter' do |ss|
-    ss.dependency 'HyperBidKlevinSDK','2.1.0'
+    ss.dependency 'HyperBidKlevinSDK','2.4.1'
     ss.ios.deployment_target = '9.0'
     ss.dependency 'HyperBidiOS/HyperBidSDK'
     ss.vendored_frameworks = 'HyperBidiOS/HyperBidKlevinAdapter.framework'
