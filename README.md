@@ -9,6 +9,9 @@ Documentation can be found [here](https://docs.hyperbid.com/#/en-us/ios/GetStart
 
 Changelog
 ---------
+**5.8.14**
+* v5.8.14
+
 <!--(CHANGELOG_TOP)-->
 **5.8.13**
 * v5.8.13
